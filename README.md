@@ -1,4 +1,4 @@
-# S1.02 — Generics
+# S1.06 — Generics
 ## 🎯 Objectives
 
 This project introduces the fundamental concepts of Java generics.
