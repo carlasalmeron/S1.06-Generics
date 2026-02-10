@@ -94,12 +94,36 @@ In this project:
 
 ## 🚀 Installation and Execution
 
-### 📂Clone Repository
-`git clone https://github.com/carlasalmeron/S1.06-Generics.git`
+1. **📂Clone the repository**:
+   ```bash
+   git clone https://github.com/carlasalmeron/S1.06-Generics.git
+   ```
+2. **Setup environment**: Ensure you have Java 21 or higher installed. No specific `.env` variables are required for this project.
+3. **Execution**:
+   The exercises are contained within a Maven module. To run the project, navigate to the `Level1&2` directory and use the following commands:
 
-### 🌍 Portability & Best Practices
+   ```bash
+   # Navigate to the project folder
+   cd Level1&2
+
+   # Compile the project
+   mvn clean compile
+
+   # Run the main demonstration
+   mvn exec:java -Dexec.mainClass="task1task2.Main"
+   ```
+
+   *Manual compilation (if Maven is not in PATH):*
+   ```cmd
+   # From inside the Level1&2 folder
+   javac -d bin src/main/java/task1task2/*.java
+   java -cp bin task1task2.Main
+   ```
+4. **Tests**: Manual verification through the console output of the `Main` class.
+
+## 🌍 Portability & Best Practices
 
 This project follows good practices to ensure clean and maintainable code:
-- Clear separation of responsibilities between classes
-- Progressive introduction of generics concepts
-- Safe and controlled use of generic varargs
+- **Type Safety**: Ensuring data integrity through compile-time checks with generics.
+- **Progressive Learning**: Step-by-step introduction of generic concepts from non-generic to varargs usage.
+- **Safe Varargs**: Utilizing `@SafeVarargs` and adhering to safe generic array patterns.
